@@ -1,0 +1,315 @@
+<!-- This file contains a few elements adapted from the online tutoral -->
+<!-- on Bootstrap 4 as found here: https://www.w3schools.com/bootstrap4/default.asp -->
+<!-- as well as JQuery found here: https://www.w3schools.com/jquery/default.asp -->
+
+<!-- Images source: -->
+<!-- The two icons come from this bank of icons: https://icons8.com/icons.  I used the free downloadable ones.-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- The head should contain an appropriate title for your site -->
+<head>
+    <title>Fares Eye Centre</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use JQuery as well as JQueryUI library -->
+    <!-- which is built on top of JQuery and offers additional possibilities -->
+    <!-- For example, JQuery UI has a datepicker which is popular and that we can use -->
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/excite-bike/jquery-ui.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- Your own script -->
+    <script src="scripts/service.js"></script>
+
+    <!-- Your own additional style sheet -->
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<!-- Using the collapsible Navbar, so we see the hamburger menu icon -->
+<!-- It really has become a standard. -->
+<!-- As your page is a vertical page (Module 4 requirement), you mus use the navbar -->
+<!-- to just jump to parts of the page. What I put as First/Second/Third here would -->
+<!-- be sections in your page. -->
+<nav class="navbar navbar-expand-md bg-info navbar-light fixed-top">
+   <!-- <a class="navbar-brand" href="#">Navbar</a>-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#first">Our Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#second">Our Team</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#third">Book an Appointment</a>
+            </li>
+        </ul>
+    </div>
+    <div class="text-dark ml-auto"><h7> (613) 225-0399</h7></div>
+
+
+</nav>
+
+<div class="container" id="home">
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
+
+<div class="text-dark text-center"><h1> Fares Eye Centre</h1></div>
+<br>
+<div class="text-muted text-center"><h4> 2900 Gibford Drive, Ottawa ON</h4></div>
+
+
+<!-- Just arbitrary divisions to see the link from the NavBar -->
+<!-- Also, notice the use of the icon repeated from the menu to add grouping -->
+<div id="first">
+    <br>
+    <br>
+</div>
+
+<div class="row d-flex justify-content-center">
+    <div class="text-info" style="padding: 1rem 5rem;"><h1>Our Services</h1></div>
+
+    <div class="text-dark" style="padding: 1rem 18rem;"><h2> Eye Exams:</h2></div>
+
+        <div class="col-sm-6 card" style="width: 20rem; border:none;">
+            <div class="card-body">
+              <h3 class="card-title ">Full Eye Exam</h3>
+              <h4 class="price">160$</h4>
+              <p class="card-text text-muted">Vision and eye health assessment for adults aged 18 and up. Includes Auxillary Testing.</p>
+            </div>
+        </div>
+
+        <div class="col-sm-6 card" style="width: 20rem; border:none;">
+            <div class="card-body">
+              <h3 class="card-title">Children Eye Exam</h3>
+              <h4 class="price">60$</h4>
+              <p class="card-text text-muted">Vision and eye health assessment for children aged 17 and under.</p>
+            </div>
+        </div>
+
+        <div class="col-sm-6 card" style="width: 20rem; border:none;">
+            <div class="card-body">
+              <h3 class="card-title">Partial Eye Exam</h3>
+              <h4 class="price">75$</h4>
+              <p class="card-text text-muted">Urgent eye care such as: red eye treatment, dry eye treatment, cosmetic lid surgeriesn and more...</p>
+            </div>
+        </div>
+
+        <div class="mt-3"></div>
+
+        <div class="text-dark" style="padding: 1rem 18rem;"><h2> Fittings:</h2></div>
+
+        <div class="col-sm-6 card" style="width: 20rem; border:none;">
+            <div class="card-body">
+              <h3 class="card-title">Contact Lens Fitting</h3>
+              <h4 class="price">50$</h4>
+              <p class="card-text text-muted">Our doctors will make sure you have the best contact lenses for your eyes. 
+                  We carry soft lenses, hard lenses, cosmetic coloured lenses and even overnight vision correcting lenses! </p>
+            </div>
+        </div>
+
+        <div class="col-sm-6 card" style="width: 20rem; border:none;">
+            <div class="card-body">
+              <h3 class="card-title">Glasses/Sunglasses Fitting</h3>
+              <h4 class="price">40$</h4>
+              <p class="card-text text-muted">Our doctors are here to help you choose the perfect glasses. 
+                  From fitting you with the best possible product, to choosing that perfect frame and high quality lenses.</p>
+            </div>
+        </div> 
+</div>
+
+<br>
+
+
+<div id="second">
+    <br>
+    <br>
+</div>
+
+<div class="row d-flex justify-content-center">
+
+        <div class="text-info" style="padding: 1rem 5rem;"><h1>Our Team</h1></div>
+    
+       <!-- <div class="text-dark" style="padding: 1rem 18rem;"><h2> Eye Exams:</h2></div> -->
+    
+            <div class="col-sm-6 card" style="width: 20rem; border:none;">
+                <img src="images/joe.PNG" width="65" height="260" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h3 class="card-title ">Dr. Faten Fares</h3>
+                  <h4 class="price">Optometrist</h4>
+                  <p class="card-text text-muted">Dr. Fares has been practicing optometry since 1999. She makes sure her exams are 
+                      thorough and her results are carefully communicated to the patients. </p> 
+                  <p class="card-text text-muted">Dr. Fares sees patients on Mondays, Tuesdays, Thursdays and Fridays. </p>
+                </div>
+            </div>
+    
+            <div class="col-sm-6 card" style="width: 20rem; border:none;">
+                <img src="images/sal.PNG" width="65" height="260" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h3 class="card-title">Dr. Saleh Yaacoub</h3>
+                  <h4 class="price">Optometrist</h4>
+                  <p class="card-text text-muted">Dr. Yaacoub has been practicing optometry since 2020. He pays great attention 
+                      to detail and makes sure each patient leaves the exam fully informed. </p>
+                  <p class="card-text text-muted">Dr. Yaacoub sees patients on Mondays, Tuesdays, Wednesdays, Thursdays and Saturdays.</p>
+                </div>
+            </div>
+    
+            <div class="col-sm-6 card" style="width: 20rem; border:none;">
+                <img src="images/anwar.PNG" width="65" height="260" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h3 class="card-title">Anwar Fares</h3>
+                  <h4 class="price">Optician</h4>
+                  <p class="card-text text-muted">Anwar is our licensed and registered Optician. He has been working in the Optical industry since 2004. 
+                      He’s here to help you through the full glasses/lenses selection process. </p>
+                </div>
+            </div>
+    
+            <!-- <div class="text-dark" style="padding: 1rem 18rem;"><h2> Fittings:</h2></div> -->
+    
+            <div class="col-sm-6 card" style="width: 20rem; border:none;">
+                <img src="images/me.PNG" width="65" height="260" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h3 class="card-title">Dalia Sawaya</h3>
+                  <h4 class="price">Receptionist</h4>
+                  <p class="card-text text-muted">Dalia is our office receptionist with a big smile. 
+                      Do not hesitate calling Dalia for your next appointment. </p>
+                </div>
+            </div>
+    
+           
+   <!-- <h3><img src="images/tiger.png" alt="logo" style="width:40px;">Second Item</h3>
+    <p>Display text 1 </p>
+    <p>Display text 2 </p>
+    <p>Display text 3 </p>
+    <p>Display text 4 </p>
+    <p>Display text 5 </p>
+    <p>Display text 6 </p>-->
+</div>
+
+<div id="third">
+    <br>
+    <br>
+</div>
+
+<!-- This section contains elements to be validated -->
+<!-- Refer to the JavaScript file, where JQuery is used to listen to those inputs using the ids -->
+<div class="text-info" style="padding: 1rem 5rem;"><h1>Book an Appointment</h1></div>
+
+<div class="container"> 
+
+    <h5>Select a Service:</h5>
+    <h7>Eye Exams</h7>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="chooseService" id="full">
+        <label class="form-check-label" for="full">
+          Full Eye Exam - 160$
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="chooseService" id="children">
+        <label class="form-check-label" for="flexRadioDefault1">
+            Children Eye Exam - 60$
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="chooseService" id="partial">
+        <label class="form-check-label" for="flexRadioDefault2">
+          Partial Eye Exam - 75$
+        </label>
+      </div>
+      <h7>Fittings</h7>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="chooseService" id="contact">
+        <label class="form-check-label" for="flexRadioDefault1">
+            Contact Lens Fitting - 50$
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="chooseService" id="glasses">
+        <label class="form-check-label" for="flexRadioDefault2">
+          Glasses/Sunglasses Fitting - 40$
+        </label>
+      </div>
+
+    <br>
+
+    <h5>Select a Doctor:</h5>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="chooseDr" id="faten">
+        <label class="form-check-label" for="full">
+          Dr. Faten Fares
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="chooseDr" id="saleh">
+        <label class="form-check-label" for="flexRadioDefault1">
+          Dr. Saleh Yaacoub
+        </label>
+      </div>
+      
+    <br>
+
+    <h5>Select a Date:</h5> <p> Select a Doctor before selecting a Date <input type="text" id="dateInput"></h5>
+
+    <br>
+
+    <h5>Select a Time:</h5>
+    <select id="favorite">
+        <option value=" " selected=" "> </option>
+        <option value="1">10:00AM</option>
+        <option value="2">10:30AM</option>
+        <option value="3">11:00AM</option>
+        <option value="4">11:30AM</option>
+        <option value="5">12:00PM</option>
+        <option value="2">12:30PM</option>
+        <option value="3">1:00PM</option>
+        <option value="4">1:30PM</option>
+        <option value="5">2:00PM</option>
+        <option value="2">2:30PM</option>
+        <option value="3">3:00PM</option>
+        <option value="4">3:30PM</option>
+        <option value="5">4:00PM</option>
+        <option value="4">4:30PM</option>
+        <option value="5">5:00PM</option>
+        <option value="4">5:30PM</option>
+    </select>
+
+    <br>
+    <br>
+
+    <h5>Enter your Phone Number:</h5> 
+    <p> (ex. '(999) 999-9999' ) <input value="" type="text" id="phone"></p>
+
+    <br>
+
+    <h5>Enter your Credit Card Number:</h5> <p>(ex. '9999 9999 9999 9999' ) 
+        <input type="text" id="creditCard" title="50$ will be charged in case you do not show up to your appointment without cancelling it first."></p>
+
+    <br>
+
+    <button type="button" class="btn btn-info btn-lg" id="bookApp">Book the Appointment</button>
+</div>
+
+<br>
+
+<br>
+
+</body>
+</html>
