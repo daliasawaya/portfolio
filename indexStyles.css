@@ -1,0 +1,32 @@
+.body {
+    font-family: 'Cambria', sans-serif;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 24px;
+    background: linear-gradient(to right, #ff758c, #ff7eb3, #75a3ff);
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 36px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+p {
+    margin: 10px 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #fda1c7;
+}
+
