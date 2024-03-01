@@ -1,0 +1,3 @@
+[submodule "hangman_game"]
+	path = hangman_game
+	url = https://github.com/daliasawaya/hangman.git
