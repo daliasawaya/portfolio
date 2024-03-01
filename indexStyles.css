@@ -30,3 +30,14 @@ a:hover {
     color: #fda1c7;
 }
 
+li {
+    text-align: left;
+}
+
+img {
+    width: 800px;
+}
+
+#hangman-summary {
+    margin-top: 50px; /* Adjust spacing as needed */
+}
