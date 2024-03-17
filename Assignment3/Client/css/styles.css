@@ -1,0 +1,114 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: rgb(248, 241, 225);
+  }
+  
+  #keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    position: fixed;
+    bottom: 50px; 
+    left: 0;
+    right: 0;
+  }
+  
+  .letter {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    font-size: 20px;
+    border: 1px solid blueviolet;
+    cursor: pointer;
+    background-color: rgb(229, 186, 229);
+    color: blueviolet;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+
+.letter:hover {
+    background-color: blueviolet;
+    color: rgb(247, 237, 247);
+}
+
+.guessed {
+    background-color: #ccc; 
+    color: #888; 
+    pointer-events: none; 
+    border: 1px solid rgb(50, 50, 50);
+}
+  
+#placeholder-container {
+  position: fixed;
+  top: 50%;
+  right: 15%; 
+  transform: translateY(-50%);
+}
+
+.placeholder-line {
+  display: inline-block; 
+  width: 40px; 
+  height: 4px; 
+  background-color: rgb(245, 164, 64);
+  margin: 0 10px; 
+}
+
+#word-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-bottom: 10px; 
+}
+
+.placeholder-line.correct-letter {
+  margin: 10px 10px; 
+  font-size: 30px;
+  color:rgb(245, 164, 64);
+  font-weight: bold;
+  font-family: 'Arial', sans-serif; 
+}
+
+#hangman-container {
+  position: absolute;
+  top: 50%;
+  left: 10%; 
+  transform: translateY(-50%);
+}
+
+#hangman-image {
+  width: 400px; 
+  height: auto; 
+}
+
+#scoreboard {
+  position: fixed;
+  top: 20px; 
+  right: 20px; 
+  background-color: #ccf7ce;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif; 
+}
+
+#scoreboard p {
+  margin: 0;
+}
+
+#scoreboard span {
+  font-weight: bold;
+}
+
+.title {
+  text-align: center; 
+  font-size: 48px; 
+  color: #4CAF50; 
+  margin-top: 50px; 
+  font-family: 'Arial', sans-serif; 
+  text-transform: uppercase; 
+  letter-spacing: 2px; 
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); 
+}
